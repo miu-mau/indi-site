@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+.navbar{
+    display: grid;
+    background-color: #988d8dbf;
+    width: auto;
+    height: 70px;
+    grid-template-columns: 150px 150px 2fr;
+    border-radius: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+.navbar{
+    position: sticky;
+    top: 10px;
+    z-index: 7;
+    background: transparent;
+}
+.home{
+    position: relative;
+    font-size: 30px;
+    left: 45px;
+    background: transparent;
+}
+a{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: #2e3134;
+    top: 15px;
+    background: transparent;
+    text-decoration: none;
+}
+.about{
+    justify-self: end;
+    margin-right: 80px;
+}
+.picture{
+    margin-top: 30px;
+    border-radius: 10px;
+    width: auto;
+    height: 600px;
+    background-color: #7eebab;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.5s;
+    background-image: url(gif_one.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.picture.element-show {
+    opacity: 1;
+transform: translateY(0);
+}
+p{
+    position: relative;
+    font-size: 90px;
+    color: #c7ddbb;
+    -webkit-text-stroke:2px #1f2220;
+    font-family: "Pixelify Sans", sans-serif;
+    margin: auto;
+    text-align: center;
+    top: 250px;
+    text-decoration: solid;
+}
+.typing{
+    position: relative;
+    margin-top: 140px;
+    display: grid;
+    place-items: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+}
+.pic-1{
+    position: relative;
+    background-image: url(mouse.png);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+
+}
+/* если я смогу то поставь мышку на прво и пусть она держиться */
+
+.top10{
+    margin-top: 60px;
+    width: auto;
+    height: 5000px;
+    display: grid;
+    grid-template-rows: repeat(10, 8fr);
+}
+.container{
+    position: relative;
+}
+
+.box{
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    background-size: cover;
+    top: 10%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    left: 75px;
+    border-radius: 8px;
+}
+#ten{
+    background-image: url(header.jpg);
+}
+#nine{
+    background-image: url(Undertale.jpeg);
+}
+#eight{
+    background-image: url(Yuppie_Psycho.jpeg);
+}
+#seven{
+    background-image: url(Stardew_Valley.jpeg);
+}
+#six{
+    background-image: url(The_forest.jpeg);
+}
+#five{
+    background-image: url(omori.jpeg);
+}
+#four{
+   background-image: url(night_in_the_woods.jpeg);
+}
+#three{
+    background-image: url(OneShot.jpeg);
+}
+#two{
+    background-image: url(sky.jpeg);
+}
+#one{
+    background-image: url(Outlast.jpeg);
+}
+.rectangle {
+    position: absolute;
+    width: 600px;
+    height: 210px;
+    top: 16%;
+    left: 14%;
+    background-color: #c5c5c57c;
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: opacity 0.6s, transform 1s;
+    z-index: 0;
+    border-radius: 5px;
+}
+.rectangle.element-show {
+    opacity: 1;
+    transform: translateX(31%);
+}
+.mini{
+    position: absolute;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    top: -62px;
+    left: 120px;
+    transform: translateX(0);
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+
+}
+#mini_ten{
+    background-image: url(mini_header.png);
+}
+.mini.element-show{
+    opacity: 1;
+    transform: translateX(0);
+}
+p1{
+    position: absolute;
+    font-size: 90px;
+    color: #545852;
+    -webkit-text-stroke:2px #1f2220;
+    font-family: "Tiny5", sans-serif;
+    left: 30px;
+    z-index: 2;
+}
+.row{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: -184px;
+    left: 30%;
+
+}
+#shit{
+    position: relative;
+    top: 10%;
+}
+/* .box:hover ~.mini {
+    opacity: 1;
+    transform: translateX(0);
+  } */
+/* game.html
