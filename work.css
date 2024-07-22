@@ -101,6 +101,17 @@ p{
     width: 270px;
     height: 270px;
     background-size: cover;
+    top: 106%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    left: 75px;
+    border-radius: 8px;
+}
+.box1{
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    background-size: cover;
     top: 10%;
     background-repeat: no-repeat;
     z-index: 1;
@@ -192,8 +203,7 @@ p1{
 
 }
 #shit{
-    position: relative;
-    top: 10%;
+    position: absolute;
 }
 /* .box:hover ~.mini {
     opacity: 1;
