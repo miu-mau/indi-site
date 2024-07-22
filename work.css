@@ -107,17 +107,6 @@ p{
     left: 75px;
     border-radius: 8px;
 }
-.box1{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    background-size: cover;
-    top: 10%;
-    background-repeat: no-repeat;
-    z-index: 1;
-    left: 75px;
-    border-radius: 8px;
-}
 #ten{
     background-image: url(header.jpg);
 }
@@ -209,4 +198,12 @@ p1{
     opacity: 1;
     transform: translateX(0);
   } */
-/* game.html
+
+.rec{
+    position: absolute;
+    height: 180px;
+    width: 600px;
+    top: 10%;
+    left: 58%;
+    border-radius: 5px;
+}
