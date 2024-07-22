@@ -85,7 +85,7 @@ p{
     top: 10%;
     background-repeat: no-repeat;
     z-index: 1;
-    left: 75px;
+    left: 58px;
     border-radius: 8px;
 }
 #ten_g{
@@ -140,7 +140,7 @@ p1{
 .rec{
     position: absolute;
     height: 180px;
-    width: 600px;
+    width: 565px;
     top: 10%;
     left: 58%;
     border-radius: 5px;
@@ -199,7 +199,7 @@ p1{
     position: absolute;
     background-color: #c7ddbb;
     height: 214px;
-    width: 600px;
+    width: 565px;
     left: 58%;
     top: 39%;
 }
