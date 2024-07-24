@@ -81,43 +81,61 @@ p{
     position: absolute;
     width: 750px;
     height: 420px;
-    background-size: cover;
     top: 10%;
-    background-repeat: no-repeat;
     z-index: 1;
     left: 58px;
     border-radius: 8px;
 }
 #ten_g{
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(Hollow_Knigh.jpeg); 
 }
 #nine_g{
     background-image: url(undertal_g.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 #eight_g{
     background-image: url(yup_g.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #seven_g{
     background-image: url(sta_g.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #six_g{
     background-image: url(The_forest_g.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #five_g{
     background-image: url(omori_g.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #four_g{
    background-image: url(night_g.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 #three_g{
     background-image: url(onr_shot_g.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #two_g{
     background-image: url(sky_g.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #one_g{
     background-image: url(outlast_g.jpeg);
+        background-size: cover;
+    background-repeat: no-repeat;
 }
 p1{
     position: absolute;
@@ -203,3 +221,37 @@ p1{
     left: 58%;
     top: 39%;
 }
+
+/* Добавляем медиа-запрос для телефонов */
+@media (max-width: 768px) {
+    /* Изменяем размеры и позиционирование элементов */
+    .navbar {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+    .home {
+      left: 0;
+    }
+    a {
+      width: 100%;
+      height: auto;
+    }
+    .rec {
+      position: relative;
+      height: auto;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    #g10, #g9, #g8, #g7, #g6, #g5, #g4, #g3, #g2, #g1 {
+      background-size: cover;
+      background-position: center;
+    }
+    .info {
+      position: relative;
+      height: auto;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
