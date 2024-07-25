@@ -145,15 +145,14 @@ p{
     top: 16%;
     background-color: #c5c5c57c;
     border-radius: 5px;
-    left: 0;
-    animation: move-to-center 1.3s forwards;
+    transform: translateX(20%);
+    opacity: 0;
+    transition: opacity 0.6s, transform 1s;
+    z-index: 0;
 }
-
-@keyframes move-to-center {
-    100% {
-        left: 50%;
-        transform: translateX(-50%);
-    }
+.rectangle.element-show {
+    opacity: 1;
+    transform: translateX(71%);
 }
 .mini{
     position: absolute;
@@ -217,6 +216,14 @@ p1{
         width: 80%;
         height: 20%;
         top: 56%;
+        transform: translateX(-20%);
+        opacity: 0;
+        transition: opacity 0.6s, transform 1s;
+        z-index: 0;
+   }
+   .rectangle.element-show {
+        opacity: 1;
+        transform: translateX(12%);
    }
 }
 
