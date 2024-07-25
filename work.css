@@ -9,20 +9,12 @@
     grid-template-columns: 150px 150px 2fr;
     border-radius: 10px;
     font-family: "Pixelify Sans", sans-serif;
-}
-.navbar{
     position: sticky;
     top: 10px;
     z-index: 7;
     background: transparent;
 }
-.home{
-    position: relative;
-    font-size: 30px;
-    left: 45px;
-    background: transparent;
-}
-a{
+.navbar a{
     position: relative;
     width: 30px;
     height: 30px;
@@ -31,6 +23,12 @@ a{
     top: 15px;
     background: transparent;
     text-decoration: none;
+}
+.home{
+    position: relative;
+    font-size: 30px;
+    left: 45px;
+    background: transparent;
 }
 .about{
     justify-self: end;
@@ -104,7 +102,7 @@ p{
     width: 270px;
     height: 270px;
     background-size: cover;
-    top: 106%;
+    top: 10%;
     background-repeat: no-repeat;
     z-index: 1;
     left: 75px;
@@ -145,17 +143,17 @@ p{
     width: 600px;
     height: 210px;
     top: 16%;
-    left: 14%;
     background-color: #c5c5c57c;
-    transform: translateX(-20%);
-    opacity: 0;
-    transition: opacity 0.6s, transform 1s;
-    z-index: 0;
     border-radius: 5px;
+    left: 0;
+    animation: move-to-center 1.3s forwards;
 }
-.rectangle.element-show {
-    opacity: 1;
-    transform: translateX(31%);
+
+@keyframes move-to-center {
+    100% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 .mini{
     position: absolute;
@@ -194,41 +192,31 @@ p1{
     left: 30%;
 
 }
-#shit{
-    position: absolute;
-}
-/* .box:hover ~.mini {
-    opacity: 1;
-    transform: translateX(0);
-  } */
-
-.rec{
-    position: absolute;
-    height: 180px;
-    width: 600px;
-    top: 10%;
-    left: 58%;
-    border-radius: 5px;
-}
 
 @media (max-width: 480px) {
+    .navbar a{
+        left: -21%;
+    }
     .top10{
         height: 5800px; 
+        width: auto;
     }
     .box {
-        left: 259%;
         height: 250px;
         width: 250px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .mini {
         width: 150px;
         height: 100px;
-        left: 27%;
+        margin: 0 auto;
+
     }
     .rectangle {
-      width: 80%;
-      height: 150px;
-      top: 53%;
-      left: -16%;
-    }
-  }
+        width: 80%;
+        height: 20%;
+        top: 56%;
+   }
+}
+
