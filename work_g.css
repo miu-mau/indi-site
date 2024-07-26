@@ -26,7 +26,6 @@
 }
 .home{
     position: relative;
-    font-size: 30px;
     left: 45px;
     background: transparent;
 }
@@ -212,15 +211,40 @@ p1{
 }
 .info{
     position: absolute;
-    background-color: #c7ddbb;
     height: 214px;
     width: 565px;
     left: 58%;
     top: 39%;
+    background-color: #b55a5a80;
+}
+p2{
+    position: relative;
+    font-size: 19px;
+    color: #3d4638;
+    font-family: "Pixelify Sans", sans-serif;
+    margin: auto;
+    text-align: center;
+    text-decoration: solid;
+    top: 25px;
+    left: 11px;
+}
+.bb{
+    height: 700px;
+    width: auto;
 }
 @media (max-width: 480px) {
     .navbar a{
-        left: -21%;
+        font-size: 25px;
+    }
+    .navbar{
+        grid-template-columns: 120px 150px 2fr;
+    }
+    .home{
+        left: 20px;
+    }
+    .about{
+        position: relative;
+        right: 0px;
     }
     p1{
         color: #ececec;
@@ -241,7 +265,7 @@ p1{
         top: 20%;
     }
     .info{
-        width: 380px;
+        width: 356px;
         height: 160px;
         left: 50%;
         transform: translateX(-50%);
@@ -252,5 +276,8 @@ p1{
         width: 10px;
         top: -51px;
 
+    }
+    p2{
+        font-size: 12px;
     }
 }
