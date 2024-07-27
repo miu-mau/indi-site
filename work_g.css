@@ -306,8 +306,12 @@ p2{
     }
     .typing-1{
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-45%);
         top: -50px;
-        font-size: 15px;
+        font-size: 17px;
+    }
+    .typing{
+            left: 50%;
+            transform: translateX(-50%);
     }
 }

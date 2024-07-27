@@ -286,4 +286,17 @@ p2{
    p2{
     font-size: 14px;
    }
+   .line{
+    width: 370px;
+    }
+   .typing-1{
+    left: 50%;
+    transform: translateX(-45%);
+    top: -50px;
+    font-size: 17px;
+    }
+    .typing{
+        left: 50%;
+        transform: translateX(-45%);
+    }
 }
