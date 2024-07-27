@@ -81,7 +81,6 @@ p{
     place-items: center;
 
 }
-/* если я смогу то поставь мышку на прво и пусть она держиться */
 
 .top10{
     margin-top: 60px;
@@ -154,7 +153,7 @@ p{
     opacity: 1;
     transform: translateX(71%);
 }
-.mini{
+/* .mini{
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,7 +172,7 @@ p{
 .mini.element-show{
     opacity: 1;
     transform: translateX(0);
-}
+} */
 p1{
     position: absolute;
     font-size: 90px;
@@ -203,8 +202,28 @@ p2{
     left: 13px;
 }
 .bb{
-    height: 700px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 30px 2fr;
+    height: 200px;
     width: auto;
+    top: 80px;
+}
+.line{
+    position: absolute;
+    background-color: #99ad8e;
+    height: 6px;
+    width: 1250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.typing-1{
+    position: relative;
+    margin-top: 140px;
+    display: grid;
+    place-items: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
 }
 @media (max-width: 480px) {
     .navbar a{
@@ -245,12 +264,12 @@ p2{
         top: 0px;
         transform: translateX(-50%);
     }
-    .mini {
+    /* .mini {
         width: 93px;
         height: 69px;
         left: 35%;
 
-    }
+    } */
     .rectangle {
         width: 80%;
         height: 32%;

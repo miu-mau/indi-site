@@ -30,8 +30,9 @@
     background: transparent;
 }
 .about{
+    position: relative;
     justify-self: end;
-    margin-right: 80px;
+    right: 80px;
 }
 p{
     position: relative;
@@ -215,22 +216,41 @@ p1{
     width: 565px;
     left: 58%;
     top: 39%;
-    background-color: #b55a5a80;
 }
 p2{
     position: relative;
-    font-size: 19px;
+    font-size: 28px;
     color: #3d4638;
     font-family: "Pixelify Sans", sans-serif;
     margin: auto;
     text-align: center;
     text-decoration: solid;
-    top: 25px;
-    left: 11px;
+    top: 5px;
+    left: 12px;
 }
 .bb{
-    height: 700px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 30px 2fr;
+    height: 200px;
     width: auto;
+    top: 80px;
+}
+.line{
+    position: absolute;
+    background-color: #99ad8e;
+    height: 6px;
+    width: 1250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.typing-1{
+    position: relative;
+    margin-top: 140px;
+    display: grid;
+    place-items: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
 }
 @media (max-width: 480px) {
     .navbar a{
@@ -244,7 +264,8 @@ p2{
     }
     .about{
         position: relative;
-        right: 0px;
+        justify-self: end;
+        right: 15px;
     }
     p1{
         color: #ececec;
@@ -278,6 +299,15 @@ p2{
 
     }
     p2{
-        font-size: 12px;
+        font-size: 15px;
+    }
+    .line{
+        width: 370px;
+    }
+    .typing-1{
+        left: 50%;
+        transform: translateX(-50%);
+        top: -50px;
+        font-size: 15px;
     }
 }
